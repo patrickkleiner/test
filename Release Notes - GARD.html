@@ -1,0 +1,970 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+
+
+
+
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+<title>Release Notes - GARD</title>
+<meta name="application-name" content="JIRA" data-name="jira" data-version="7.6.9"><meta name="ajs-dev-mode" content="false">
+<meta name="ajs-context-path" content="/gard">
+<meta name="ajs-version-number" content="7.6.9">
+<meta name="ajs-build-number" content="76011">
+<meta name="ajs-is-beta" content="false">
+<meta name="ajs-is-rc" content="false">
+<meta name="ajs-is-snapshot" content="false">
+<meta name="ajs-is-milestone" content="false">
+<meta name="ajs-remote-user" content="patrick.kleiner@external.telekom.de">
+<meta name="ajs-remote-user-fullname" content="Kleiner, Patrick">
+<meta name="ajs-user-locale" content="en_UK">
+<meta name="ajs-user-locale-group-separator" content=",">
+<meta name="ajs-app-title" content="GARD">
+<meta name="ajs-keyboard-shortcuts-enabled" content="true">
+<meta name="ajs-keyboard-accesskey-modifier" content="Alt">
+<meta name="ajs-enabled-dark-features" content="[&quot;com.atlassian.jira.agile.darkfeature.editable.detailsview&quot;,&quot;nps.survey.inline.dialog&quot;,&quot;com.atlassian.jira.agile.darkfeature.edit.closed.sprint.enabled&quot;,&quot;jira.plugin.devstatus.phasetwo&quot;,&quot;jira.frother.reporter.field&quot;,&quot;atlassian.rest.xsrf.legacy.enabled&quot;,&quot;jira.site.darkfeature.admin&quot;,&quot;jira.issue.status.lozenge&quot;,&quot;com.atlassian.jira.config.BIG_PIPE&quot;,&quot;com.atlassian.jira.projects.issuenavigator&quot;,&quot;com.atlassian.jira.config.PDL&quot;,&quot;jira.plugin.devstatus.phasetwo.enabled&quot;,&quot;atlassian.aui.raphael.disabled&quot;,&quot;app-switcher.new&quot;,&quot;frother.assignee.field&quot;,&quot;com.atlassian.jira.projects.ProjectCentricNavigation.Switch&quot;,&quot;sd.internal.base.off.thread.on.completion.events.enabled&quot;,&quot;jira.onboarding.cyoa&quot;,&quot;sd.slavalue.record.updated.date.enabled&quot;,&quot;com.atlassian.jira.agile.darkfeature.kanplan.enabled&quot;,&quot;com.atlassian.jira.config.ProjectConfig.MENU&quot;,&quot;com.atlassian.jira.projects.sidebar.DEFER_RESOURCES&quot;,&quot;com.atlassian.jira.agile.darkfeature.kanplan.epics.and.versions.enabled&quot;,&quot;com.atlassian.jira.agile.darkfeature.sprint.goal.enabled&quot;,&quot;jira.zdu.admin-updates-ui&quot;,&quot;jira.zdu.jmx-monitoring&quot;,&quot;sd.sla.improved.rendering.enabled&quot;,&quot;sd.canned.responses.enabled&quot;,&quot;jira.plugins.dnd.attachment&quot;,&quot;sd.new.settings.sidebar.location.disabled&quot;,&quot;jira.zdu.cluster-upgrade-state&quot;,&quot;com.atlassian.jira.agile.darkfeature.splitissue&quot;,&quot;com.atlassian.jira.config.CoreFeatures.LICENSE_ROLES_ENABLED&quot;,&quot;com.atlassian.feedback.feedback-button-move-to-header-enable&quot;,&quot;jira.export.csv.enabled&quot;]">
+<meta name="ajs-in-admin-mode" content="false">
+<meta name="ajs-is-sysadmin" content="false">
+<meta name="ajs-is-admin" content="false">
+<meta name="ajs-outgoing-mail-enabled" content="true">
+<meta name="ajs-date-relativize" content="true">
+<meta name="ajs-date-time" content="HH:mm">
+<meta name="ajs-date-day" content="EEEE HH:mm">
+<meta name="ajs-date-dmy" content="dd/MMM/yy">
+<meta name="ajs-date-complete" content="dd/MMM/yy HH:mm">
+<script type="text/javascript">var AJS=AJS||{};AJS.debug=true;</script>
+
+
+    
+<meta id="atlassian-token" name="atlassian-token" content="AREI-Y2RZ-7GF0-NRGB_3abd0a9f890a032ed0f858938f54487128365443_lin">
+
+
+
+<link rel="shortcut icon" href="/gard/s/vri30e/76011/cd7637c364feaec72bc271675c96d417/_/favicon.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/gard/osd.jsp" title="Release Notes - GARD"/>
+
+    
+
+
+
+<!--[if IE]><![endif]-->
+<script type="text/javascript">
+    (function() {
+        var contextPath = '/gard';
+        var eventBuffer = [];
+
+        function printDeprecatedMsg() {
+            if (console && console.warn) {
+                console.warn('DEPRECATED JS - contextPath global variable has been deprecated since 7.4.0. Use `wrm/context-path` module instead.');
+            }
+        }
+
+        function sendEvent(analytics, postfix) {
+            analytics.send({
+                name: 'js.globals.contextPath.' + postfix
+            });
+        }
+
+        function sendDeprecatedEvent(postfix) {
+            try {
+                var analytics = require('jira/analytics');
+                if (eventBuffer.length) {
+                    eventBuffer.forEach(function(value) {
+                        sendEvent(analytics, value);
+                    });
+                    eventBuffer = [];
+                }
+
+                if (postfix) {
+                    sendEvent(analytics, postfix);
+                }
+            } catch(ex) {
+                eventBuffer.push(postfix);
+                setTimeout(sendDeprecatedEvent, 1000);
+            }
+        }
+
+        Object.defineProperty(window, 'contextPath', {
+            get: function() {
+                printDeprecatedMsg();
+                sendDeprecatedEvent('get');
+                return contextPath;
+            },
+            set: function(value) {
+                printDeprecatedMsg();
+                sendDeprecatedEvent('set');
+                contextPath = value;
+            }
+        });
+    })();
+
+</script>
+<script>
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};window.WRM._unparsedErrors=window.WRM._unparsedErrors||{};
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"/gard\"";
+WRM._unparsedData["jira.webresources:feature-flags.feature-flag-data"]="{\"enabled-feature-keys\":[\"com.atlassian.jira.agile.darkfeature.editable.detailsview\",\"nps.survey.inline.dialog\",\"com.atlassian.jira.agile.darkfeature.edit.closed.sprint.enabled\",\"jira.plugin.devstatus.phasetwo\",\"jira.frother.reporter.field\",\"atlassian.rest.xsrf.legacy.enabled\",\"jira.site.darkfeature.admin\",\"jira.issue.status.lozenge\",\"com.atlassian.jira.config.BIG_PIPE\",\"com.atlassian.jira.projects.issuenavigator\",\"com.atlassian.jira.config.PDL\",\"jira.plugin.devstatus.phasetwo.enabled\",\"atlassian.aui.raphael.disabled\",\"app-switcher.new\",\"frother.assignee.field\",\"com.atlassian.jira.projects.ProjectCentricNavigation.Switch\",\"sd.internal.base.off.thread.on.completion.events.enabled\",\"jira.onboarding.cyoa\",\"sd.slavalue.record.updated.date.enabled\",\"com.atlassian.jira.agile.darkfeature.kanplan.enabled\",\"com.atlassian.jira.config.ProjectConfig.MENU\",\"com.atlassian.jira.projects.sidebar.DEFER_RESOURCES\",\"com.atlassian.jira.agile.darkfeature.kanplan.epics.and.versions.enabled\",\"com.atlassian.jira.agile.darkfeature.sprint.goal.enabled\",\"jira.zdu.admin-updates-ui\",\"jira.zdu.jmx-monitoring\",\"sd.sla.improved.rendering.enabled\",\"sd.canned.responses.enabled\",\"jira.plugins.dnd.attachment\",\"sd.new.settings.sidebar.location.disabled\",\"jira.zdu.cluster-upgrade-state\",\"com.atlassian.jira.agile.darkfeature.splitissue\",\"com.atlassian.jira.config.CoreFeatures.LICENSE_ROLES_ENABLED\",\"com.atlassian.feedback.feedback-button-move-to-header-enable\",\"jira.export.csv.enabled\"],\"feature-flag-states\":{\"sd.customer.profile.multi.languages\":true,\"sd.customer.portal.transitions\":true,\"sd.customer.portal.transitions.config\":true,\"sd.custom.email.stripping.rules\":false,\"sd.sla.lucene.issue.id.callback.performance\":true,\"sd.new.settings.sidebar.location\":true,\"sd.workload.report.paginator\":true,\"sd.experimental.portal.search.algorithm.default.1\":false,\"sd.customer.portal.help.center.agent.announcement\":true,\"sd.sla.improved.rendering\":false,\"sd.experimental.portal.search.algorithm.default.2\":false,\"sd.customer.feedback.validate.reporter.on.token\":true,\"sd.custom.email.notifications.utf8.csat.star\":true,\"sd.who.create.customers.by.email.setting\":true,\"com.atlassian.jira.issuetable.move.links.hidden\":true,\"jira.renderer.consider.variable.format\":true,\"sd.stats.event.tracking\":true,\"sd.password.helper.dialog\":true,\"jira.priorities.per.project.jsd\":true,\"sd.canned.responses\":false,\"sd.portal.help.center.customer.signup.secondary.email\":true,\"sd.custom.email.notifications.manage.language\":true,\"sd.use.search.by.permissions\":true,\"sd.slavalue.record.updated.date\":false,\"sd.report.custom.date.range\":false,\"sd.kb.article.helpfulness.report\":false,\"com.atlassian.jira.agile.darkfeature.sprint.goal\":false,\"sd.portal.help.center.customer.signup.secondary.email.fallback\":true,\"sd.custom.email.notifications.styling\":true,\"sd.workinghours.new.page.bulldog.1\":false,\"sd.customer.portal.two.step.login\":false,\"sd.automation.psmq.async.executor\":true,\"sd.customer.org.list.page.lazy.search\":true,\"sd.approval.requested.when.handler\":true,\"com.atlassian.jira.agile.darkfeature.sidebar.boards.list\":true,\"sd.request.type.field.rest.api.filtering.bugfix\":true,\"sd.automation.then.action.auto.answer.approval\":true,\"com.atlassian.jira.plugin.issuenavigator.filtersUxImprovment\":true,\"com.atlassian.jira.agile.darkfeature.kanplan.epics.and.versions\":false,\"sla.will.only.be.paused.if.they.are.already.started\":true,\"sd.kb.comment.share.stats.collection\":true,\"com.atlassian.jira.upgrade.startup.fix.index\":true,\"sd.customer.orgs.group.participants\":true,\"sd.portal.help.center.customer.signup\":true,\"sd.sla.agent.jql.security.restricted\":true,\"sd.test.feature.flag.x\":true,\"sd.test.feature.flag.y\":false,\"sd.cluster.safe.mail.channel.shutdown\":true,\"sd.email.channel.folders\":false,\"sd.email.analytics.open\":false,\"sd.kb.project.creation.create.link.space\":true,\"sd.workinghours.new.page\":false,\"sd.confluence.anonymous.permission.fix\":true,\"com.atlassian.jira.issuetable.draggable\":true,\"sd.customer.portal.project.agent.announcement\":true,\"sd.automation.audit.log\":true,\"com.atlassian.jira.agile.darkfeature.kanban.hide.old.done.issues\":false,\"jira.jql.suggestrecentfields\":false,\"sd.canned.responses.check.index.startup\":false,\"sd.new.project.templates\":true,\"sd.custom.email.notifications.custom.rules.simple.ui\":false,\"sd.custom.email.notifications.cut.over\":true,\"sd.dismiss.all.misconfiguration.warnings.setting\":true,\"com.atlassian.jira.agile.darkfeature.optimistic.transitions\":true,\"sd.sla.configurations.export\":true,\"sd.canned.responses.variable.substitution\":true,\"com.atlassian.jira.agile.darkfeature.kanplan\":false,\"sd.internal.base.off.thread.on.completion.events\":false,\"sd.customer.portal.prioties.per.project.fix\":true,\"jira.instrumentation.laas\":false,\"sd.kb.self.service.report\":false,\"sla.improved.request.handling\":true,\"sd.no.schedule.async.upgrade.tasks\":true,\"sd.kb.primary.nav\":true,\"com.atlassian.jira.agile.darkfeature.edit.closed.sprint\":false,\"sd.kb.issueview.panel.phase2\":true,\"sd.email.outsider.comments\":true,\"jira.create.linked.issue\":true,\"sd.kb.issueview.panel\":true,\"jira.sal.host.connect.accessor.existing.transaction.will.create.transactions\":true,\"sd.approvals.light.weight\":false,\"sd.automation.then.webhook\":true,\"sd.priorities.per.project\":true,\"sd.respect.inline.edit.issue.off\":true,\"jira.jql.smartautoselectfirst\":false,\"sd.global.portal.search.atlassian.only.tracking\":false,\"sd.automation.if.condition.comment.primary.action\":true,\"jira.priorities.per.project\":true,\"sd.inline.noformat.renderer\":true,\"sd.customer.request.type.create.edit.screens\":true}}";
+WRM._unparsedData["jira.webresources:default-comment-security-level.DefaultCommentSecurityLevelHelpLink"]="{\"extraClasses\":\"default-comment-level-help\",\"title\":\"Commenting on an Issue\",\"url\":\"https://docs.atlassian.com/jira/jsw-docs-076/Editing+and+collaborating+on+issues#Editingandcollaboratingonissues-restrictacomment\",\"isLocal\":false}";
+WRM._unparsedData["com.atlassian.analytics.analytics-client:policy-update-init.policy-update-data-provider"]="false";
+WRM._unparsedData["com.atlassian.analytics.analytics-client:programmatic-analytics-init.programmatic-analytics-data-provider"]="false";
+WRM._unparsedData["com.onresolve.jira.groovy.groovyrunner:web-item-response-renderer.web-item-actions-data-provider"]="[]";
+WRM._unparsedData["jira.webresources:dateFormatProvider.allFormats"]="{\"dateFormats\":{\"meridiem\":[\"AM\",\"PM\"],\"eras\":[\"BC\",\"AD\"],\"months\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\"],\"monthsShort\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\"],\"weekdaysShort\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"],\"weekdays\":[\"Sunday\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"]},\"lookAndFeelFormats\":{\"relativize\":\"true\",\"time\":\"HH:mm\",\"day\":\"EEEE HH:mm\",\"dmy\":\"dd/MMM/yy\",\"complete\":\"dd/MMM/yy HH:mm\"}}";
+WRM._unparsedData["com.atlassian.servicedesk.servicedesk-canned-responses-plugin:canned-responses-data-provider.data"]="{\"userId\":34060,\"substitutionVariables\":{\"issue.summary\":\"Issue summary\",\"issue.description\":\"Issue description\",\"issue.key\":\"Issue key\",\"issue.reporter.name\":\"Issue reporter\",\"issue.resolution\":\"Issue resolution\",\"request.url\":\"Request URL\",\"request.status\":\"Request status\"}}";
+WRM._unparsedData["de.telekom.gard.portfolio.portfolio-extension:common-resources.journal-field-ids-with-own-panel"]="[\"customfield_18110\"]";
+WRM._unparsedData["jira.webresources:avatar-picker.data"]="{}";
+WRM._unparsedData["com.atlassian.feedback.jira-feedback-plugin:button-resources-init.data"]="{\"jira.feedback.plugin.issue.collector.core\":\"https://jira.atlassian.com/s/576e9ab86257d4f65f6ea5b6dd50de44-T/en_UK3ljiw5/71006/b6b48b2829824b869586ac216d119363/2.0.11/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs.js?locale=en-UK&collectorId=abbf546d\",\"jira.feedback.plugin.issue.collector.default\":\"https://jira.atlassian.com/s/576e9ab86257d4f65f6ea5b6dd50de44-T/en_UK3ljiw5/71006/b6b48b2829824b869586ac216d119363/2.0.11/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs.js?locale=en-UK&collectorId=abbf546d\",\"jira.feedback.plugin.issue.collector.service.desk\":\"https://jira.atlassian.com/s/576e9ab86257d4f65f6ea5b6dd50de44-T/en_UK3ljiw5/71006/b6b48b2829824b869586ac216d119363/2.0.11/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-UK&collectorId=a698db21\",\"jira.feedback.plugin.issue.collector.software\":\"https://jira.atlassian.com/s/576e9ab86257d4f65f6ea5b6dd50de44-T/en_UK3ljiw5/71006/b6b48b2829824b869586ac216d119363/2.0.11/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector-embededjs.js?locale=en-UK&collectorId=abbf546d\",\"isHeaderFeedbackButtonEnabled\":true}";
+WRM._unparsedData["com.atlassian.jira.jira-header-plugin:dismissedFlags.flags"]="{\"dismissed\":[]}";
+WRM._unparsedData["com.atlassian.jira.jira-header-plugin:newsletter-signup-tip-init.newsletterSignup"]="{\"signupDescription\":\"Get updates, inspiration and best practices from the team behind JIRA.\",\"formUrl\":\"https://www.atlassian.com/apis/exact-target/{0}/subscribe?mailingListId=1401671\",\"userEmail\":\"patrick.kleiner@external.telekom.de\",\"signupTitle\":\"Sign up!\",\"signupId\":\"newsletter-signup-tip\",\"showNewsletterTip\":true}";
+WRM._unparsedData["com.atlassian.jira.project-templates-plugin:project-templates-plugin-resources.ptAnalyticsData"]="{\"instanceCreatedDate\":\"2011-05-21\"}";
+WRM._unparsedData["jira.webresources:jqlautocomplete.jql.autocomplete.recentFields"]="{\"key\":\"jqlValues\",\"value\":[\"affectedVersion\",\"assignee\",\"component\",\"description\",\"issue\",\"labels\",\"parent\",\"priority\",\"project\",\"reporter\",\"resolution\",\"status\",\"summary\",\"type\",\"watcher\"]}";
+WRM._unparsedData["com.atlassian.servicedesk.core-ui:util-help-links.help-links"]="{\"help\":{\"email.settings\":\"https://docs.atlassian.com/jira/jsd-docs-039/Receiving+requests+by+email\",\"managing.queues\":\"https://docs.atlassian.com/jira/jsd-docs-039/Setting+up+queues+for+your+team\",\"email.setup\":\"https://docs.atlassian.com/jira/jsd-docs-039/Receiving+requests+by+email\",\"request.settings.help.bubble\":\"https://docs.atlassian.com/jira/jsd-docs-039/Managing+access+to+your+service+desk\",\"email.settings.suitablerequest\":\"https://docs.atlassian.com/jira/jsd-docs-039/Receiving+requests+by+email#Receivingrequestsbyemail-suitablerequest\",\"sla.import.help\":\"https://docs.atlassian.com/jira/jsd-docs-039/Importing+SLAs\",\"documentation.home\":\"https://docs.atlassian.com/jira/jsd-docs-039/JIRA+Service+Desk+Documentation\",\"default\":\"https://docs.atlassian.com/jira/jsd-docs-039/\",\"create.space.help\":\"https://docs.atlassian.com/jira/jsd-docs-039/Serving+customers+with+a+knowledge+base#serving-customers-with-a-knowledge-base-createpermission\",\"email.settings.troubleshooting\":\"https://docs.atlassian.com/jira/jsd-docs-039/Troubleshooting+issues+with+the+email+channel\",\"admin.notifications.config\":\"https://docs.atlassian.com/jira/jsd-docs-039/Managing+service+desk+notifications\",\"troubleshoot.requesttype\":\"https://docs.atlassian.com/jira/jsd-docs-039/Troubleshooting+issues+with+request+types\",\"approvals.configuration\":\"https://docs.atlassian.com/jira/jsd-docs-039/Configuring+JIRA+Service+Desk+approvals\",\"setting.up.reports\":\"https://docs.atlassian.com/jira/jsd-docs-039/Setting+up+service+desk+reports\",\"public.signup\":\"https://docs.atlassian.com/jira/jsd-docs-039/Configuring+public+signup\",\"knowledge.base\":\"https://docs.atlassian.com/jira/jsd-docs-039/Serving+customers+with+a+knowledge+base\",\"resolve.permission.scheme.errors\":\"https://docs.atlassian.com/jira/jsd-docs-039/Resolving+permission+scheme+errors\",\"getting.started\":\"https://docs.atlassian.com/jira/jsd-docs-039/Getting+started+with+JIRA+Service+Desk\",\"getting.started.agent\":\"https://docs.atlassian.com/jira/jsd-docs-039/Getting+started+for+service+desk+agents\",\"invite.customers\":\"https://docs.atlassian.com/jira/jsd-docs-039/Managing+access+to+your+service+desk\"},\"kb\":{\"default\":\"https://confluence.atlassian.com/display/SDKB/\",\"troubleshooting.user.management.issues\":\"https://confluence.atlassian.com/display/SDKB/Troubleshooting+issues+with+service+desk+user+management\",\"legacytransition\":\"https://confluence.atlassian.com/display/SDKB/Replacing+legacy+automatic+transitions+with+automation+rules\",\"umtroubleshoot\":\"https://confluence.atlassian.com/display/SDKB/Troubleshooting+issues+with+service+desk+user+management\"}}";
+WRM._unparsedData["com.atlassian.servicedesk.core-ui:util-base-url.base-url"]="\"https://gard.telekom.de/gard\"";
+WRM._unparsedData["com.atlassian.whisper.atlassian-whisper-plugin:atlassian-whisper-bootstrap.WhisperData"]="{\"hasMessages\":true,\"syncInit\":false,\"userEmail\":\"patrick.kleiner@external.telekom.de\",\"baseUrl\":\"https:\\/\\/gard.telekom.de\\/gard\"}";
+WRM._unparsedData["com.onresolve.jira.groovy.groovyrunner:directIdeaIntegration.idea-editor-data-provider"]="{\"available\":false,\"enabled\":false,\"isExternalIdeaEnabled\":false,\"url\":\"https://localhost:63349\",\"app\":\"JIRA\",\"platformId\":\"jira\",\"version\":\"7.6.9\",\"pluginVersion\":\"5.5.0\",\"running\":false,\"canonicalBaseUrl\":\"https://gard.telekom.de/gard\",\"scriptRoots\":[],\"isSystemAdmin\":false,\"hasEditPermissions\":false,\"clustered\":false,\"clusterNodeIds\":[],\"clusterNodeId\":null,\"helpBaseUrl\":\"https://scriptrunner.adaptavist.com/5.5.0\"}";
+WRM._unparsedData["com.atlassian.jira.plugins.jira-wiki-editor:wiki-editor-resources.help-data"]="{\"showHelp\":true,\"editorDocumentationUrl\":[\"https://docs.atlassian.com/jira/jsw-docs-076/Visual+editing\"],\"editorDocumentationTitle\":[\"Show me documentation for the visual editor\"]}";
+WRM._unparsedData["com.atlassian.jira.plugins.jira-wiki-editor:wiki-editor-resources.thumbnails-allowed"]="true";
+WRM._unparsedData["jira.webresources:user-message-flags.adminLockout"]="{}";
+WRM._unparsedData["com.atlassian.plugins.helptips.jira-help-tips:help-tip-manager.JiraHelpTipData"]="{\"dismissed\":[\"newsletter-signup-tip\"],\"anonymous\":false}";
+WRM._unparsedData["jira.request.correlation-id"]="\"12b17de60750e6\"";
+WRM._unparsedData["tzdetect.pref.auto.detect"]="true";
+WRM._unparsedData["tzdetect.pref.tzid"]="\"Europe/Berlin\"";
+WRM._unparsedData["tzdetect.pref.tzname"]="\"(GMT+01:00) Berlin\"";
+WRM._unparsedData["tzdetect.pref.janOffset"]="3600000";
+WRM._unparsedData["tzdetect.pref.julyOffset"]="7200000";
+if(window.WRM._dataArrived)window.WRM._dataArrived();</script>
+<link type="text/css" rel="stylesheet" href="/gard/s/19b4983e0f4a6064f49c687284cb5fee-CDN/vri30e/76011/cd7637c364feaec72bc271675c96d417/5b966350b1076959f2ab0067350622b4/_/download/contextbatch/css/_super/batch.css" data-wrm-key="_super" data-wrm-batch-type="context" media="all">
+<link type="text/css" rel="stylesheet" href="/gard/s/2794b76ca772640edc75d6083093fd76-CDN/vri30e/76011/cd7637c364feaec72bc271675c96d417/6b08692a96910575ec3d0b31f6ec3496/_/download/contextbatch/css/atl.general,jira.global,jira.general,atl.global,-_super/batch.css?agile_global_admin_condition=true&amp;is-server-instance=true&amp;jag=true&amp;jaguser=true&amp;nps-not-opted-out=true&amp;sd_operational=true&amp;whisper-enabled=true" data-wrm-key="atl.general,jira.global,jira.general,atl.global,-_super" data-wrm-batch-type="context" media="all">
+<link type="text/css" rel="stylesheet" href="/gard/s/e9fa475fe7feba56a6665b0bb2683313-CDN/vri30e/76011/cd7637c364feaec72bc271675c96d417/1.0/_/download/batch/jira.webresources:groupbrowser/jira.webresources:groupbrowser.css" data-wrm-key="jira.webresources:groupbrowser" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/gard/s/e9fa475fe7feba56a6665b0bb2683313-CDN/vri30e/76011/cd7637c364feaec72bc271675c96d417/1.0/_/download/batch/jira.webresources:group-pickers/jira.webresources:group-pickers.css" data-wrm-key="jira.webresources:group-pickers" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="/gard/s/ffd618708fd3987a4203cf31598231b6-T/vri30e/76011/cd7637c364feaec72bc271675c96d417/7.6.9/_/download/batch/com.atlassian.feedback.jira-feedback-plugin:button-resources-init/com.atlassian.feedback.jira-feedback-plugin:button-resources-init.css" data-wrm-key="com.atlassian.feedback.jira-feedback-plugin:button-resources-init" data-wrm-batch-type="resource" media="all">
+<script type="text/javascript" src="/gard/s/af4edd1ec46105a1a78b720def96bd5e-CDN/vri30e/76011/cd7637c364feaec72bc271675c96d417/5b966350b1076959f2ab0067350622b4/_/download/contextbatch/js/_super/batch.js?locale=en-UK" data-wrm-key="_super" data-wrm-batch-type="context" data-initially-rendered></script>
+<script type="text/javascript" src="/gard/s/25486ddb0ecd1c9b39b90a6721ae8132-CDN/vri30e/76011/cd7637c364feaec72bc271675c96d417/6b08692a96910575ec3d0b31f6ec3496/_/download/contextbatch/js/atl.general,jira.global,jira.general,atl.global,-_super/batch.js?agile_global_admin_condition=true&amp;content-type=text%2Fjavascript&amp;is-server-instance=true&amp;jag=true&amp;jaguser=true&amp;locale=en-UK&amp;nps-not-opted-out=true&amp;sd_operational=true&amp;whisper-enabled=true" data-wrm-key="atl.general,jira.global,jira.general,atl.global,-_super" data-wrm-batch-type="context" data-initially-rendered></script>
+<script type="text/javascript" src="/gard/s/25486ddb0ecd1c9b39b90a6721ae8132-CDN/vri30e/76011/cd7637c364feaec72bc271675c96d417/6b08692a96910575ec3d0b31f6ec3496/_/download/contextbatch/js/atl.general,jira.global,jira.general,atl.global,-_super/batch.js?agile_global_admin_condition=true&amp;is-server-instance=true&amp;jag=true&amp;jaguser=true&amp;locale=en-UK&amp;nps-not-opted-out=true&amp;sd_operational=true&amp;whisper-enabled=true" data-wrm-key="atl.general,jira.global,jira.general,atl.global,-_super" data-wrm-batch-type="context" data-initially-rendered></script>
+<script type="text/javascript" src="/gard/s/13d9c2da32115102dc8583d157b4116a-CDN/vri30e/76011/cd7637c364feaec72bc271675c96d417/3.0.0/_/download/batch/com.atlassian.jira.jira-tzdetect-plugin:tzdetect-banner-component/com.atlassian.jira.jira-tzdetect-plugin:tzdetect-banner-component.js?locale=en-UK" data-wrm-key="com.atlassian.jira.jira-tzdetect-plugin:tzdetect-banner-component" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/gard/s/d41d8cd98f00b204e9800998ecf8427e-CDN/vri30e/76011/cd7637c364feaec72bc271675c96d417/3.0.0/_/download/batch/com.atlassian.jira.jira-tzdetect-plugin:tzdetect-lib/com.atlassian.jira.jira-tzdetect-plugin:tzdetect-lib.js" data-wrm-key="com.atlassian.jira.jira-tzdetect-plugin:tzdetect-lib" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/gard/s/f42244e6c42a904a2f2347d3829214e7-CDN/vri30e/76011/cd7637c364feaec72bc271675c96d417/1.0/_/download/batch/jira.webresources:group-label-lozenge/jira.webresources:group-label-lozenge.js?locale=en-UK" data-wrm-key="jira.webresources:group-label-lozenge" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/gard/s/d41d8cd98f00b204e9800998ecf8427e-CDN/vri30e/76011/cd7637c364feaec72bc271675c96d417/1.0/_/download/batch/jira.webresources:groupbrowser/jira.webresources:groupbrowser.js" data-wrm-key="jira.webresources:groupbrowser" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/gard/s/13d9c2da32115102dc8583d157b4116a-CDN/vri30e/76011/cd7637c364feaec72bc271675c96d417/1.0/_/download/batch/jira.webresources:group-pickers/jira.webresources:group-pickers.js?locale=en-UK" data-wrm-key="jira.webresources:group-pickers" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/gard/s/d41d8cd98f00b204e9800998ecf8427e-CDN/vri30e/76011/cd7637c364feaec72bc271675c96d417/1.0/_/download/batch/jira.webresources:ie-imitation-placeholder/jira.webresources:ie-imitation-placeholder.js" data-wrm-key="jira.webresources:ie-imitation-placeholder" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/gard/s/1c08bc0792baccb299795654bdc233ab-CDN/vri30e/76011/cd7637c364feaec72bc271675c96d417/1.0/_/download/batch/jira.webresources:jira-project-issuetype-fields/jira.webresources:jira-project-issuetype-fields.js?locale=en-UK" data-wrm-key="jira.webresources:jira-project-issuetype-fields" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/gard/s/13d9c2da32115102dc8583d157b4116a-CDN/vri30e/76011/cd7637c364feaec72bc271675c96d417/1.0/_/download/batch/jira.webresources:jira-fields/jira.webresources:jira-fields.js?locale=en-UK" data-wrm-key="jira.webresources:jira-fields" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/gard/s/d41d8cd98f00b204e9800998ecf8427e-CDN/vri30e/76011/cd7637c364feaec72bc271675c96d417/1.0/_/download/batch/jira.webresources:calendar-en/jira.webresources:calendar-en.js" data-wrm-key="jira.webresources:calendar-en" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/gard/s/d41d8cd98f00b204e9800998ecf8427e-CDN/vri30e/76011/cd7637c364feaec72bc271675c96d417/1.0/_/download/batch/jira.webresources:calendar-localisation-moment/jira.webresources:calendar-localisation-moment.js" data-wrm-key="jira.webresources:calendar-localisation-moment" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/gard/s/d41d8cd98f00b204e9800998ecf8427e-CDN/vri30e/76011/cd7637c364feaec72bc271675c96d417/4.5.6/_/download/batch/com.atlassian.jira.jira-projects-plugin:data/com.atlassian.jira.jira-projects-plugin:data.js" data-wrm-key="com.atlassian.jira.jira-projects-plugin:data" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/gard/s/d41d8cd98f00b204e9800998ecf8427e-CDN/vri30e/76011/cd7637c364feaec72bc271675c96d417/4.5.6/_/download/batch/com.atlassian.jira.jira-projects-plugin:projects-api/com.atlassian.jira.jira-projects-plugin:projects-api.js" data-wrm-key="com.atlassian.jira.jira-projects-plugin:projects-api" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/gard/s/d41d8cd98f00b204e9800998ecf8427e-CDN/vri30e/76011/cd7637c364feaec72bc271675c96d417/7.6.9/_/download/batch/com.atlassian.feedback.jira-feedback-plugin:button-resources/com.atlassian.feedback.jira-feedback-plugin:button-resources.js" data-wrm-key="com.atlassian.feedback.jira-feedback-plugin:button-resources" data-wrm-batch-type="resource" data-initially-rendered></script>
+<link type="text/css" rel="stylesheet" href="/gard/s/500dd71622c4bcf7dc4b70819d1d563a-CDN/vri30e/76011/cd7637c364feaec72bc271675c96d417/704bd8b3b38b4c91bde58afd7ad2607c/_/download/contextbatch/css/jira.global.look-and-feel,-_super/batch.css" data-wrm-key="jira.global.look-and-feel,-_super" data-wrm-batch-type="context" media="all">
+
+<script type="text/javascript" src="/gard/rest/api/1.0/shortcuts/76011/d9cbbea3bd97cdeccbe862d5500fe561/shortcuts.js"></script>
+
+
+    
+    
+
+</head>
+<body id="jira" class="aui-layout aui-theme-default " data-version="7.6.9">
+<div id="page">
+    <header id="header" role="banner">
+        
+
+
+
+
+
+
+<script>
+require(["jquery", "jira/license-banner"], function ($, licenseBanner) {
+    $(function () {
+        licenseBanner.showLicenseBanner("");
+        licenseBanner.showLicenseFlag("");
+    });
+});
+</script>
+
+
+
+        
+
+
+
+
+        
+
+
+
+
+<nav class="aui-header aui-dropdown2-trigger-group" role="navigation"><div class="aui-header-inner"><div class="aui-header-before"><a class=" aui-dropdown2-trigger app-switcher-trigger" aria-controls="app-switcher" aria-haspopup="true" role="button" tabindex="0" data-aui-trigger href="#app-switcher"><span class="aui-icon aui-icon-small aui-iconfont-appswitcher">Linked Applications</span></a><div id="app-switcher" class="aui-dropdown2 aui-style-default" role="menu" aria-hidden="true" data-is-switcher="true" data-environment="{&quot;isUserAdmin&quot;:false,&quot;isAppSuggestionAvailable&quot;:false,&quot;isSiteAdminUser&quot;:false}"><div role="application"><div class="app-switcher-loading">Loading&hellip;</div></div></div></div><div class="aui-header-primary"><h1 id="logo" class="aui-header-logo aui-header-logo-custom"><a href="https://gard.telekom.de/gard/secure/MyJiraHome.jspa"><img src="/gard/s/vri30e/76011/cd7637c364feaec72bc271675c96d417/_/jira-logo-scaled.png" alt="GARD" /></a></h1><ul class='aui-nav'><li><a href="/gard/secure/Dashboard.jspa" class=" aui-nav-link aui-dropdown2-trigger aui-dropdown2-ajax" id="home_link" aria-haspopup="true" aria-controls="home_link-content" title="View and manage your dashboards" accesskey="d">Dashboards</a><div class="aui-dropdown2 aui-style-default" id="home_link-content" data-aui-dropdown2-ajax-key="home_link"></div></li><li><a href="/gard/browse/SUPERFD" class=" aui-nav-link aui-dropdown2-trigger aui-dropdown2-ajax" id="browse_link" aria-haspopup="true" aria-controls="browse_link-content" title="View recent projects and browse a list of projects" accesskey="p">Projects</a><div class="aui-dropdown2 aui-style-default" id="browse_link-content" data-aui-dropdown2-ajax-key="browse_link"></div></li><li><a href="/gard/issues/" class=" aui-nav-link aui-dropdown2-trigger aui-dropdown2-ajax" id="find_link" aria-haspopup="true" aria-controls="find_link-content" title="Search for issues and view recent issues" accesskey="i">Issues</a><div class="aui-dropdown2 aui-style-default" id="find_link-content" data-aui-dropdown2-ajax-key="find_link"></div></li><li><a href="/gard/secure/RapidBoard.jspa" class=" aui-nav-link aui-dropdown2-trigger aui-dropdown2-ajax" id="greenhopper_menu" aria-haspopup="true" aria-controls="greenhopper_menu-content" title="Manage your project with JIRA Software">Boards</a><div class="aui-dropdown2 aui-style-default" id="greenhopper_menu-content" data-aui-dropdown2-ajax-key="greenhopper_menu"></div></li><li><a href="/gard/secure/StructureBoard.jspa" class=" aui-nav-link aui-dropdown2-trigger aui-dropdown2-ajax" id="wi-structure-link" aria-haspopup="true" aria-controls="wi-structure-link-content" title="Open structure">Structure</a><div class="aui-dropdown2 aui-style-default" id="wi-structure-link-content" data-aui-dropdown2-ajax-key="wi-structure-link"></div></li><li><a href="/gard/secure/UssRequestPermissions!default.jspa" class=" aui-nav-link aui-dropdown2-trigger" id="self_service_link" aria-haspopup="true" aria-controls="self_service_link-content">Self Service</a><div class="aui-dropdown2 aui-style-default" id="self_service_link-content"><div id="self_service_section" class="aui-dropdown2-section" ><strong>Self Service</strong><ul class="aui-list-truncate"><li id="my_permissions_link"><a href="/gard/secure/MyPermissions.jspa" id="my_permissions_link_lnk" class="">My Permissions</a></li><li id="request_permissions_link_id"><a href="/gard/secure/UssRequestPermissions!default.jspa" id="request_permissions_link_id_lnk" class="">Request Permissions</a></li></ul></div></div></li>
+<li id="create-menu"><a  id="create_link"  class="aui-button aui-button-primary aui-style create-issue "  title="Create a new issue / bug / feature request / etc" href="/gard/secure/CreateIssue!default.jspa" accesskey="c">Create</a></li></ul></div><div class="aui-header-secondary"><ul class='aui-nav'><li id="quicksearch-menu">
+    <form action="/gard/secure/QuickSearch.jspa" method="get" id="quicksearch" class="aui-quicksearch dont-default-focus ajs-dirty-warning-exempt">
+        <input id="quickSearchInput" class="search" type="text" title="Search" placeholder="Search" name="searchString" accessKey="q" />
+        <input type="submit" class="hidden" value="Search">
+    </form>
+</li>
+<li><a class="jira-feedback-plugin" role="button" aria-haspopup="true" id="jira-header-feedback-link" href="#"><span class="aui-icon aui-icon-small jira-feedback-plugin-icon">Give feedback to Atlassian</span></a></li>
+
+
+
+    <li id="system-help-menu">
+        <a class="aui-nav-link aui-dropdown2-trigger" id="help_menu" aria-haspopup="true" aria-owns="system-help-menu-content" href="https://docs.atlassian.com/jira/jsw-docs-076/"  target="$textUtils.htmlEncode($rootHelpMenuItem.params.target)"  title="Help"><span class="aui-icon aui-icon-small aui-iconfont-help">Help</span></a>
+        <div id="system-help-menu-content" class="aui-dropdown2 aui-style-default">
+                            <div class="aui-dropdown2-section">
+                                                                <ul id="jira-help" class="aui-list-truncate">
+                                                            <li>
+                                    <a id="gh_view_help" class="aui-nav-link " title="Get help online for JIRA Software" href="https://docs.atlassian.com/jira/jsw-docs-076/"  target="_blank" >JIRA Software help</a>
+                                </li>
+                                                            <li>
+                                    <a id="view_core_help" class="aui-nav-link " title="Go to the online documentation for JIRA Core" href="https://docs.atlassian.com/jira/jcore-docs-076/"  target="_blank" >JIRA Core help</a>
+                                </li>
+                                                            <li>
+                                    <a id="keyshortscuthelp" class="aui-nav-link " title="Get more information about JIRA's Keyboard Shortcuts" href="/gard/secure/ViewKeyboardShortcuts!default.jspa"  target="_blank" >Keyboard Shortcuts</a>
+                                </li>
+                                                            <li>
+                                    <a id="view_about" class="aui-nav-link " title="Get more information about JIRA" href="/gard/secure/AboutPage.jspa" >About JIRA</a>
+                                </li>
+                                                            <li>
+                                    <a id="view_credits" class="aui-nav-link " title="See who did what" href="/gard/secure/JiraCreditsPage!default.jspa"  target="_blank" >JIRA Credits</a>
+                                </li>
+                                                    </ul>
+                                    </div>
+                    </div>
+    </li>
+
+
+
+
+
+
+
+
+
+<li id="user-options">
+            <a id="header-details-user-fullname" class="aui-dropdown2-trigger" aria-haspopup="true" aria-owns="user-options-content" data-username="patrick.kleiner@external.telekom.de" data-displayname="Kleiner, Patrick" href="/gard/secure/ViewProfile.jspa" title="User profile for Kleiner, Patrick">
+            <span class="aui-avatar aui-avatar-small">
+                <span class="aui-avatar-inner">
+                    <img src="https://gard.telekom.de/gard/secure/useravatar?size=small&avatarId=10362" alt="User profile for Kleiner, Patrick"/>
+                </span>
+            </span>
+        </a>
+                <div id="user-options-content" class="aui-dropdown2 aui-style-default">
+                            <div class="aui-dropdown2-section">
+                                                                <ul id="personal" class="aui-list-truncate">
+                                                                                                                            <li>
+                                        <a  id="view_profile"   class=""  title="View and change your details and preferences" href="/gard/secure/ViewProfile.jspa">Profile</a>
+                                    </li>
+                                                                                    </ul>
+                                    </div>
+                            <div class="aui-dropdown2-section">
+                                                                <ul id="gard-config-section" class="aui-list-truncate">
+                                                                                                                            <li>
+                                        <a  id="gard-version-link"   class=""   href="/gard">7.2.0</a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a  id="gard-hiddenIssueTypes-link"   class=""   href="/gard"> 27 </a>
+                                    </li>
+                                                                                    </ul>
+                                    </div>
+                            <div class="aui-dropdown2-section">
+                                            <strong>My JIRA Home</strong>
+                                                                <ul id="set_my_jira_home" class="aui-list-truncate">
+                                                                                                                                                                                                                                                                    <li>
+                                        <a  id="set_my_jira_home_default"  class="aui-dropdown2-radio interactive checked    " title="Set my JIRA Home to the Dashboard." href="/gard/secure/UpdateMyJiraHome.jspa?target=com.atlassian.jira.jira-my-home-plugin%3Aset_my_jira_home_dashboard&atl_token=AREI-Y2RZ-7GF0-NRGB_3abd0a9f890a032ed0f858938f54487128365443_lin">Dashboard</a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a  id="greenhopper-my-jira-home-set"  class="aui-dropdown2-radio interactive    " title="Set my JIRA home page to Boards." href="/gard/secure/UpdateMyJiraHome.jspa?target=com.pyxis.greenhopper.jira%3Agreenhopper-my-jira-home-set-51&atl_token=AREI-Y2RZ-7GF0-NRGB_3abd0a9f890a032ed0f858938f54487128365443_lin">Boards</a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a  id="structure-my-jira-home-set"  class="aui-dropdown2-radio interactive    " title="Set my Jira Home to the Structure Board." href="/gard/secure/UpdateMyJiraHome.jspa?target=com.almworks.jira.structure%3Awi-structure-jira-home-51&atl_token=AREI-Y2RZ-7GF0-NRGB_3abd0a9f890a032ed0f858938f54487128365443_lin">Structure</a>
+                                    </li>
+                                                                                                                                <li>
+                                        <a  id="set_my_jira_home_issuenav"  class="aui-dropdown2-radio interactive    " title="Set my JIRA Home to the Issue Navigator." href="/gard/secure/UpdateMyJiraHome.jspa?target=com.atlassian.jira.jira-my-home-plugin%3Aset_my_jira_home_issue&atl_token=AREI-Y2RZ-7GF0-NRGB_3abd0a9f890a032ed0f858938f54487128365443_lin">Issue Navigator</a>
+                                    </li>
+                                                                                    </ul>
+                                    </div>
+                            <div class="aui-dropdown2-section">
+                                                                <ul id="system" class="aui-list-truncate">
+                                                                                                                            <li>
+                                        <a  id="log_out"   class=""  title="Log out and cancel any automatic login." href="/gard/logout?atl_token=AREI-Y2RZ-7GF0-NRGB_3abd0a9f890a032ed0f858938f54487128365443_lin">Log Out</a>
+                                    </li>
+                                                                                    </ul>
+                                    </div>
+                    </div>
+    </li>
+</ul></div></div><!-- .aui-header-inner--></nav><!-- .aui-header -->
+    </header>
+    
+
+
+<div id="announcement-banner" class="alertHeader">
+    <!-- <div id="gardbanner" class="aui-message aui-message-info closeable" style="text-align:center;background-color:#2EFE2E;">
+Leider muss derzeit bei Anfragen an das GARD-Team mit längeren Wartezeiten gerechnet werden. Wir bemühen uns um eine Lösung und bitten für die Umstände um Entschuldigung.<br>The waiting time to complete your requests may be longer than normal. We are working on a solution in the background. Our apologies in advance.
+<script>
+if (AJS.Cookie.read("engpass") == "true"){
+        document.getElementById('gardbanner').style.display = 'none';
+    }
+    document.addEventListener('click', function (e) {
+        var msgid = e.target.parentElement.id;
+        var msgtargetclass = e.target.className;
+        if (msgid == "gardbanner" && msgtargetclass == "aui-icon icon-close") {
+            AJS.Cookie.save("engpass", "true");
+        }
+    });
+</script>
+</div> -->
+</div>
+
+
+    <section id="content" role="main">
+        
+    <div class="aui-page-panel"><div class="aui-page-panel-inner">
+            <section class="aui-page-panel-content">
+                    <title>Release Notes - Supersquad Fixed Data - Version PFS 3.0 Stufe 2 - HTML format</title>
+<body>
+
+<div class="ops-cont">
+    <ul class="ops">
+        <li>
+            <a class="button first last" href="/gard/secure/ConfigureReleaseNote.jspa?projectId=25622&version=37993">Configure Release Notes</a>
+        </li>
+    </ul>
+</div>
+
+            <h2>Sub-Task</h2>
+        <ul>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-37'>SUPERFD-37</a>] - CONAN - CNTDB Anbindung Bulkinterface </li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-38'>SUPERFD-38</a>] - Integration LDAP Loadbalancer</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-49'>SUPERFD-49</a>] - Anbindung RDQ / MDP an CNTDB</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-55'>SUPERFD-55</a>] - Klärung Tunnelkunden Liste An Smart</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-65'>SUPERFD-65</a>] - EInbringen Automation und Vereinfachung Usecases in WCONF</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-69'>SUPERFD-69</a>] - Definition Übergangslösung CASINO Backup vor DSIO Lösung</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-70'>SUPERFD-70</a>] - Definition finale Backup Lösung für CASINO</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-71'>SUPERFD-71</a>] - Einplanen und Terminfindung WCONF2 für CASINO</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-83'>SUPERFD-83</a>] - Review des Dokuments durch FMED-533</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-84'>SUPERFD-84</a>] - Löschen Teilnehmer Weißwasser</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-85'>SUPERFD-85</a>] - Löschen Teilnehmer Wünnenberg</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-86'>SUPERFD-86</a>] - Löschen Teilnehmer Rüdiger Neubauer</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-87'>SUPERFD-87</a>] - OPSSuite Rollen in CNTDB SDSK aufnehmen</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-103'>SUPERFD-103</a>] - Schulungsliste für Stufe 2 erstellen</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-104'>SUPERFD-104</a>] - Anbindung RADADMIN an CNTDB</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-105'>SUPERFD-105</a>] - Loadbalancer Integration in REF CNTDB</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-106'>SUPERFD-106</a>] - Lizenzbedarf für Stufe 2 Phase 1 erfassen</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-107'>SUPERFD-107</a>] - Zeritikatsbedarf in Stufe 2 Phase 1</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-108'>SUPERFD-108</a>] - Einbringen PFS Datenmodell in Live System</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-112'>SUPERFD-112</a>] - Phase 3: Klärung Planung RAD 61.1 Umschaltung Dezentrale Standorte auf CNTDB</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-117'>SUPERFD-117</a>] - CASINO Anpassung der Oberfläche</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-118'>SUPERFD-118</a>] - Skripte Erhebung Datenqualität</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-119'>SUPERFD-119</a>] - Phase 1: Klärung Planung RAD 61.1 Dezentrale Standorte Proxy / Lisa / Infrastruktur</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-120'>SUPERFD-120</a>] - Übergangslösung BUS mit Security diskutiern</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-121'>SUPERFD-121</a>] - Erstellen Detailed Design Dokument Einführung DB Visualizer</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-126'>SUPERFD-126</a>] - VERTICO Integration mit IBM abstimmen</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-127'>SUPERFD-127</a>] - Vertico Erweiterung CASINO bestellen und Liefertermin abstimmen</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-128'>SUPERFD-128</a>] - Zeritikatsbedarf in Stufe 2 Phase 2 ermitteln</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-129'>SUPERFD-129</a>] - Lizenzbedarf für Stufe 2 Phase 2 erfassen</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-130'>SUPERFD-130</a>] - CONAN-CNTDB Anbindung</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-131'>SUPERFD-131</a>] - Anbindung RADADMIN an CNTDB</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-132'>SUPERFD-132</a>] - Anbindung RDQ/MDP an CNTDB</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-133'>SUPERFD-133</a>] - Einbringen PFS Basis Datenmodell in Reference System</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-134'>SUPERFD-134</a>] - Stufe 2 Schulungen in Globale Schulungsliste einpflegen und tracken</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-135'>SUPERFD-135</a>] - Anbinden der dezentralen Standorte an CNTDB</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-137'>SUPERFD-137</a>] - Mit IBM Vorgehen zu CASINO Fehlermeldungen klären</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-140'>SUPERFD-140</a>] - Terminplanung finale Backup Lösung CASINO</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-141'>SUPERFD-141</a>] - Backup Lösung mit DEVOTEAM abstimmen</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-143'>SUPERFD-143</a>] - Erstellen der FS durch IBM</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-144'>SUPERFD-144</a>] - Umsetzung der Scripte in WCONF2</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-145'>SUPERFD-145</a>] - Bereitstellung der JOBS in ZAS</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-146'>SUPERFD-146</a>] - RollenModell mit SDM Fix klären</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-147'>SUPERFD-147</a>] - Erweiterung zur Rollenkonfiguration mit ITS-SDE besprechen</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-148'>SUPERFD-148</a>] - Status Integration Loadbalancer Live tracken und Terminplanung abstimmen</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-149'>SUPERFD-149</a>] - Review der FS durch DEVOTEAM</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-150'>SUPERFD-150</a>] - Review der FS durch Karsten Bär</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-152'>SUPERFD-152</a>] - CA Zertifikat des LDAP Loadbalancer bereitstellen</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-157'>SUPERFD-157</a>] - Begriff Allfallig in der FS</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-158'>SUPERFD-158</a>] - Abhängigkeiten zu SNMPv3 Feature klären</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-159'>SUPERFD-159</a>] - FS Verwaltung von LAC/Multilink Clustern</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-160'>SUPERFD-160</a>] - Abbildung 30 Farbe für Status 900 ist falsch</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-161'>SUPERFD-161</a>] - Migration ASTB1003 in Stufe 2 Phase 4</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-162'>SUPERFD-162</a>] - Test der Einrichtung eines neuen Proxies in einem Schritt</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-163'>SUPERFD-163</a>] - FS NAS statt RAR in Maske</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-164'>SUPERFD-164</a>] - Klärung Performance RADADMIN zHost Performance</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-175'>SUPERFD-175</a>] - Phase 1: Klärung Planung RAD 61.1 Zentrale Standorte RADADMIN, SAM HA, NV</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-179'>SUPERFD-179</a>] - Klärung altes IPv4 Format</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-185'>SUPERFD-185</a>] - FMED-533: Review 206662: CASINO Infrastruktur und Schnittstellen</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-186'>SUPERFD-186</a>] - NSO: 206662: CASINO Infrastruktur und Schnittstellen</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-189'>SUPERFD-189</a>] - IOPB Ansprechpartner IBM</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-190'>SUPERFD-190</a>] - Einarbeiten der Review Ergebnisse durch IBM</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-194'>SUPERFD-194</a>] - Übergangslösung Stufe 2 mit Security festlegen</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-201'>SUPERFD-201</a>] - Klären der Firewall Konfiguration</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-206'>SUPERFD-206</a>] - Generierung Zertifikate</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-207'>SUPERFD-207</a>] - Generierung Client Zertifikat</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-218'>SUPERFD-218</a>] - Beispiel altes IPV4 Format an IBM senden</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-257'>SUPERFD-257</a>] - Klärung Zeichen in Shared Secret</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-289'>SUPERFD-289</a>] - Einbringen CR 1000 Networkservices</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-291'>SUPERFD-291</a>] - Freigabe CR 1000 Networkservices</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-292'>SUPERFD-292</a>] - Einbrigen CR in Produktion</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-293'>SUPERFD-293</a>] - Einbringen CR in Reference</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-298'>SUPERFD-298</a>] - Alternative Lösung zur Vertico Integration suchen</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-304'>SUPERFD-304</a>] - Beauftragung Update CASINO auf SLES12 SP4 klären und auslösen</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-306'>SUPERFD-306</a>] - Input für Kommmatrix CASINO</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-333'>SUPERFD-333</a>] - Es soll die Verbindung zwischen Backup Client in ULM und Backup Server bei DSIO initial getestet werden</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-336'>SUPERFD-336</a>] - Backup/ Restore von DB2-Datenbanken</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-402'>SUPERFD-402</a>] - Evaluierung Lösungsoptionen mit IBM</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-495'>SUPERFD-495</a>] - Weiterführende Backup Tests auf VM-Basis</li>
+                </ul>
+                                                                        <h2>Task</h2>
+        <ul>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-342'>SUPERFD-342</a>] - DWDM Strecke zwischen Nürnberg-PFS-Ref und ULM-DSIO </li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-344'>SUPERFD-344</a>] - Anwendung VMs die mit Backup-Netzwerken ausgerüstet werden müssen </li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-345'>SUPERFD-345</a>] - Backup/ Restore Excel Themen in GARD einpflegen</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-346'>SUPERFD-346</a>] - Entscheidung: Backup Interface Definition auf VM - standardmäßig auf eth03?</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-493'>SUPERFD-493</a>] - Vertico - Anpassen KG1 Einträge für CASINO</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-500'>SUPERFD-500</a>] - Review FS Feature 206640: LISA: Kommunikation zum NAS über SNMPv3 </li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-503'>SUPERFD-503</a>] - PFS3.0 Stufe 2 Items werden mit den zuständigen Squads abgestimmt und refined</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-504'>SUPERFD-504</a>] - Restinterface VERTICO-CASINO - Zertifikate</li>
+                </ul>
+                                                                            <h2>Epic</h2>
+        <ul>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-6'>SUPERFD-6</a>] - Die Stufe 2 Phase 1 aus dem Projekt PFS 3.0</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-35'>SUPERFD-35</a>] - CNTDB - PFS Anbindung Produktion</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-50'>SUPERFD-50</a>] - CNTDB - PFS Anbindung Reference Anlage</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-56'>SUPERFD-56</a>] - OPSSUITE Handling zwischen Test, SDM und PFS klären</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-67'>SUPERFD-67</a>] - Planung der weiteren Schritte zur CASINO Einführung</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-191'>SUPERFD-191</a>] - TOOLS Integration in RADADMIN Stufe 2</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-192'>SUPERFD-192</a>] - CNTDB - PFS Anbindung Test Anlage</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-255'>SUPERFD-255</a>] - Maßnahmen aus SDSK 61.1</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-258'>SUPERFD-258</a>] - Einführung von WCONF2 zum automatischen Deployment von Anwendungen</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-332'>SUPERFD-332</a>] - PFS Backup/ Restore System basierend auf DSIO-EMC-Networker Full Managed Service</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-501'>SUPERFD-501</a>] - PFS3.0 Stufe 2 - Gesamtsicht und Squad-Übergreifende Themen</li>
+                </ul>
+                    <h2>User Story</h2>
+        <ul>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-36'>SUPERFD-36</a>] - Anbindung Produktion CNTDB-PFS</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-52'>SUPERFD-52</a>] - Anbindung Referenceanlage CNTDB - PFS</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-53'>SUPERFD-53</a>] - Löschen der Teilnehmer mit Umlauten</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-54'>SUPERFD-54</a>] - Ablösung der betrieblichen Skripte (zHost) Stufe 2</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-57'>SUPERFD-57</a>] - OPSSUITE Rollenmodell klären</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-58'>SUPERFD-58</a>] - BUS Server in Stufe 2</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-60'>SUPERFD-60</a>] - Einführung DBVisualizer </li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-62'>SUPERFD-62</a>] - Untersuchung WCONF2 nach möglichen Uses-Cases</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-68'>SUPERFD-68</a>] - Backuplösung für CASINO</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-74'>SUPERFD-74</a>] - Mappingdokument Parameter CNTDB - PFS</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-88'>SUPERFD-88</a>] - Zugang DEVOTEAM Testanlage</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-91'>SUPERFD-91</a>] - Klärung Common Tests RC19.2</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-93'>SUPERFD-93</a>] - Prüfung ob eine IT Checkliste für Applikation Stufe 2 nötig ist</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-94'>SUPERFD-94</a>] - Schulungsmaßnahmen in Stufe 2</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-95'>SUPERFD-95</a>] - Lizenzbedarf für Stufe 2 erfassen</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-96'>SUPERFD-96</a>] - Zertifikatsbedarf in Stufe 2</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-97'>SUPERFD-97</a>] - Basis Datenmodell für PFS in Live CNTDB in einbringen - Initiale Konfiguration</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-98'>SUPERFD-98</a>] - Phasendefinition für Rollout Stufe 2</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-100'>SUPERFD-100</a>] - Genehmigungsprozess CONAN-Webgui Notrufrollen</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-101'>SUPERFD-101</a>] - RDQ Schnittstellenvereinbarung RDQ 61.2</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-102'>SUPERFD-102</a>] - Globale Übersicht Stufe 1 ,2 und 3 erstellen</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-125'>SUPERFD-125</a>] - Vertico Erweiterung IP Range für CASINO</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-136'>SUPERFD-136</a>] - SPOC für Fehler in der PFS auch für CASINO</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-142'>SUPERFD-142</a>] - CASINO Erweiterungen von IBM abstimmen (VM + Vertico Rest Schnittstelle)</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-151'>SUPERFD-151</a>] - Provisioning Zertifikate für Produktion signieren</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-153'>SUPERFD-153</a>] - Monitoring Rollout Stufe 2 Phase 1</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-156'>SUPERFD-156</a>] - FS Integration RARADMIN/HISPOOL/WEBASTRA in RADADMIN</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-171'>SUPERFD-171</a>] - Abfrage der SW der Netzwerkkomponenten</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-172'>SUPERFD-172</a>] - Abfage von Kundenprofilen zur Aufbereitung der Analyse</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-173'>SUPERFD-173</a>] - Manuelle Abfrage aller wichtigen Zustände und Funktionen</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-174'>SUPERFD-174</a>] - Netzwerktrace einfach und schnell bearbeiten mittels Filterkriterien</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-188'>SUPERFD-188</a>] - IOBP Integration in Anritsu Ansprechpartner bei IBM</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-197'>SUPERFD-197</a>] - Löschen nicht mehr benötigter Domainindexe</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-200'>SUPERFD-200</a>] - Klärung offener Punkte zur Anbindung LDAP-HUB LDAP-loadbalancer</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-204'>SUPERFD-204</a>] - Anbindung RADADMIN an CNTDB PGW</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-205'>SUPERFD-205</a>] - Anbindung RDQ/MDP an CNTDB PGW TEST</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-236'>SUPERFD-236</a>] - Testanlage HISPOOL Anbindung an IT Testsystem</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-237'>SUPERFD-237</a>] - Produktion HISPOOL Anbindung an IT </li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-238'>SUPERFD-238</a>] - Produktion: HISPOOL Anbindung an DNS ziel</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-239'>SUPERFD-239</a>] - Abschalten OnlineNEW auf zHost</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-248'>SUPERFD-248</a>] - Abstimmung RDQ Anbindung CASINO</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-253'>SUPERFD-253</a>] - Löschen von Schmalbandroutern</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-268'>SUPERFD-268</a>] - WCONF2: Erweiterbare Skriptverteilung</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-274'>SUPERFD-274</a>] - BUS Stufe 2: Einführung von SOCT</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-275'>SUPERFD-275</a>] - BUS Stufe 2: Einführung von TASTE-OS</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-276'>SUPERFD-276</a>] - WCONF2: EMC Networker Client</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-277'>SUPERFD-277</a>] - WCONF2: Update Zertifikat</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-278'>SUPERFD-278</a>] - WCONF2: Update erweiterbare Skriptverteilung</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-279'>SUPERFD-279</a>] - WCONF2: Multiple Instanzen auf einer VM</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-280'>SUPERFD-280</a>] - WCONF2: Update Middlewareclients</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-281'>SUPERFD-281</a>] - WCONF2: ZBK RADANALYSIS</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-282'>SUPERFD-282</a>] - WCONF2: Umzug der Datenbanken</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-283'>SUPERFD-283</a>] - WCONF2: ZBK CASINO</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-284'>SUPERFD-284</a>] - WCONF2: ZKB Update CASINO</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-290'>SUPERFD-290</a>] - SDM: PFS CR 1000 Networkservices</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-303'>SUPERFD-303</a>] - Anpassen CASINO auf SLES12 SP4</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-305'>SUPERFD-305</a>] - CASINO Kommunikationsmatrix in der Testanlage</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-335'>SUPERFD-335</a>] - PFS3.0 Backup / Restore Tests der Lösung (PFS3.0 TA &lt;-&gt; DSIO) </li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-338'>SUPERFD-338</a>] - OPSSuite: Datenexport PFS einbinden</li>
+                    <li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-502'>SUPERFD-502</a>] - Koordination des Reviewprozesses zu allen PFS3.0 Stufe 2 relevanten Dokumenten Planung</li>
+                </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                    
+
+<a name="editarea"></a>
+<h2>Edit/Copy Release Notes</h2>
+<p>The text area below allows the project release notes to be edited and copied to another document.</p>
+
+<textarea rows="40" cols="120" id="editcopy">
+
+        Release Notes - Supersquad Fixed Data - Version PFS 3.0 Stufe 2
+    
+<h2>        Sub-Task
+</h2>
+<ul>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-37'>SUPERFD-37</a>] -         CONAN - CNTDB Anbindung Bulkinterface 
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-38'>SUPERFD-38</a>] -         Integration LDAP Loadbalancer
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-49'>SUPERFD-49</a>] -         Anbindung RDQ / MDP an CNTDB
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-55'>SUPERFD-55</a>] -         Klärung Tunnelkunden Liste An Smart
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-65'>SUPERFD-65</a>] -         EInbringen Automation und Vereinfachung Usecases in WCONF
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-69'>SUPERFD-69</a>] -         Definition Übergangslösung CASINO Backup vor DSIO Lösung
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-70'>SUPERFD-70</a>] -         Definition finale Backup Lösung für CASINO
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-71'>SUPERFD-71</a>] -         Einplanen und Terminfindung WCONF2 für CASINO
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-83'>SUPERFD-83</a>] -         Review des Dokuments durch FMED-533
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-84'>SUPERFD-84</a>] -         Löschen Teilnehmer Weißwasser
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-85'>SUPERFD-85</a>] -         Löschen Teilnehmer Wünnenberg
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-86'>SUPERFD-86</a>] -         Löschen Teilnehmer Rüdiger Neubauer
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-87'>SUPERFD-87</a>] -         OPSSuite Rollen in CNTDB SDSK aufnehmen
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-103'>SUPERFD-103</a>] -         Schulungsliste für Stufe 2 erstellen
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-104'>SUPERFD-104</a>] -         Anbindung RADADMIN an CNTDB
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-105'>SUPERFD-105</a>] -         Loadbalancer Integration in REF CNTDB
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-106'>SUPERFD-106</a>] -         Lizenzbedarf für Stufe 2 Phase 1 erfassen
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-107'>SUPERFD-107</a>] -         Zeritikatsbedarf in Stufe 2 Phase 1
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-108'>SUPERFD-108</a>] -         Einbringen PFS Datenmodell in Live System
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-112'>SUPERFD-112</a>] -         Phase 3: Klärung Planung RAD 61.1 Umschaltung Dezentrale Standorte auf CNTDB
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-117'>SUPERFD-117</a>] -         CASINO Anpassung der Oberfläche
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-118'>SUPERFD-118</a>] -         Skripte Erhebung Datenqualität
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-119'>SUPERFD-119</a>] -         Phase 1: Klärung Planung RAD 61.1 Dezentrale Standorte Proxy / Lisa / Infrastruktur
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-120'>SUPERFD-120</a>] -         Übergangslösung BUS mit Security diskutiern
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-121'>SUPERFD-121</a>] -         Erstellen Detailed Design Dokument Einführung DB Visualizer
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-126'>SUPERFD-126</a>] -         VERTICO Integration mit IBM abstimmen
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-127'>SUPERFD-127</a>] -         Vertico Erweiterung CASINO bestellen und Liefertermin abstimmen
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-128'>SUPERFD-128</a>] -         Zeritikatsbedarf in Stufe 2 Phase 2 ermitteln
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-129'>SUPERFD-129</a>] -         Lizenzbedarf für Stufe 2 Phase 2 erfassen
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-130'>SUPERFD-130</a>] -         CONAN-CNTDB Anbindung
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-131'>SUPERFD-131</a>] -         Anbindung RADADMIN an CNTDB
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-132'>SUPERFD-132</a>] -         Anbindung RDQ/MDP an CNTDB
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-133'>SUPERFD-133</a>] -         Einbringen PFS Basis Datenmodell in Reference System
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-134'>SUPERFD-134</a>] -         Stufe 2 Schulungen in Globale Schulungsliste einpflegen und tracken
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-135'>SUPERFD-135</a>] -         Anbinden der dezentralen Standorte an CNTDB
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-137'>SUPERFD-137</a>] -         Mit IBM Vorgehen zu CASINO Fehlermeldungen klären
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-140'>SUPERFD-140</a>] -         Terminplanung finale Backup Lösung CASINO
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-141'>SUPERFD-141</a>] -         Backup Lösung mit DEVOTEAM abstimmen
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-143'>SUPERFD-143</a>] -         Erstellen der FS durch IBM
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-144'>SUPERFD-144</a>] -         Umsetzung der Scripte in WCONF2
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-145'>SUPERFD-145</a>] -         Bereitstellung der JOBS in ZAS
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-146'>SUPERFD-146</a>] -         RollenModell mit SDM Fix klären
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-147'>SUPERFD-147</a>] -         Erweiterung zur Rollenkonfiguration mit ITS-SDE besprechen
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-148'>SUPERFD-148</a>] -         Status Integration Loadbalancer Live tracken und Terminplanung abstimmen
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-149'>SUPERFD-149</a>] -         Review der FS durch DEVOTEAM
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-150'>SUPERFD-150</a>] -         Review der FS durch Karsten Bär
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-152'>SUPERFD-152</a>] -         CA Zertifikat des LDAP Loadbalancer bereitstellen
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-157'>SUPERFD-157</a>] -         Begriff Allfallig in der FS
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-158'>SUPERFD-158</a>] -         Abhängigkeiten zu SNMPv3 Feature klären
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-159'>SUPERFD-159</a>] -         FS Verwaltung von LAC/Multilink Clustern
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-160'>SUPERFD-160</a>] -         Abbildung 30 Farbe für Status 900 ist falsch
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-161'>SUPERFD-161</a>] -         Migration ASTB1003 in Stufe 2 Phase 4
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-162'>SUPERFD-162</a>] -         Test der Einrichtung eines neuen Proxies in einem Schritt
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-163'>SUPERFD-163</a>] -         FS NAS statt RAR in Maske
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-164'>SUPERFD-164</a>] -         Klärung Performance RADADMIN zHost Performance
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-175'>SUPERFD-175</a>] -         Phase 1: Klärung Planung RAD 61.1 Zentrale Standorte RADADMIN, SAM HA, NV
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-179'>SUPERFD-179</a>] -         Klärung altes IPv4 Format
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-185'>SUPERFD-185</a>] -         FMED-533: Review 206662: CASINO Infrastruktur und Schnittstellen
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-186'>SUPERFD-186</a>] -         NSO: 206662: CASINO Infrastruktur und Schnittstellen
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-189'>SUPERFD-189</a>] -         IOPB Ansprechpartner IBM
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-190'>SUPERFD-190</a>] -         Einarbeiten der Review Ergebnisse durch IBM
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-194'>SUPERFD-194</a>] -         Übergangslösung Stufe 2 mit Security festlegen
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-201'>SUPERFD-201</a>] -         Klären der Firewall Konfiguration
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-206'>SUPERFD-206</a>] -         Generierung Zertifikate
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-207'>SUPERFD-207</a>] -         Generierung Client Zertifikat
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-218'>SUPERFD-218</a>] -         Beispiel altes IPV4 Format an IBM senden
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-257'>SUPERFD-257</a>] -         Klärung Zeichen in Shared Secret
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-289'>SUPERFD-289</a>] -         Einbringen CR 1000 Networkservices
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-291'>SUPERFD-291</a>] -         Freigabe CR 1000 Networkservices
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-292'>SUPERFD-292</a>] -         Einbrigen CR in Produktion
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-293'>SUPERFD-293</a>] -         Einbringen CR in Reference
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-298'>SUPERFD-298</a>] -         Alternative Lösung zur Vertico Integration suchen
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-304'>SUPERFD-304</a>] -         Beauftragung Update CASINO auf SLES12 SP4 klären und auslösen
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-306'>SUPERFD-306</a>] -         Input für Kommmatrix CASINO
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-333'>SUPERFD-333</a>] -         Es soll die Verbindung zwischen Backup Client in ULM und Backup Server bei DSIO initial getestet werden
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-336'>SUPERFD-336</a>] -         Backup/ Restore von DB2-Datenbanken
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-402'>SUPERFD-402</a>] -         Evaluierung Lösungsoptionen mit IBM
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-495'>SUPERFD-495</a>] -         Weiterführende Backup Tests auf VM-Basis
+</li>
+</ul>
+                                                            
+<h2>        Task
+</h2>
+<ul>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-342'>SUPERFD-342</a>] -         DWDM Strecke zwischen Nürnberg-PFS-Ref und ULM-DSIO 
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-344'>SUPERFD-344</a>] -         Anwendung VMs die mit Backup-Netzwerken ausgerüstet werden müssen 
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-345'>SUPERFD-345</a>] -         Backup/ Restore Excel Themen in GARD einpflegen
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-346'>SUPERFD-346</a>] -         Entscheidung: Backup Interface Definition auf VM - standardmäßig auf eth03?
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-493'>SUPERFD-493</a>] -         Vertico - Anpassen KG1 Einträge für CASINO
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-500'>SUPERFD-500</a>] -         Review FS Feature 206640: LISA: Kommunikation zum NAS über SNMPv3 
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-503'>SUPERFD-503</a>] -         PFS3.0 Stufe 2 Items werden mit den zuständigen Squads abgestimmt und refined
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-504'>SUPERFD-504</a>] -         Restinterface VERTICO-CASINO - Zertifikate
+</li>
+</ul>
+                                                                
+<h2>        Epic
+</h2>
+<ul>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-6'>SUPERFD-6</a>] -         Die Stufe 2 Phase 1 aus dem Projekt PFS 3.0
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-35'>SUPERFD-35</a>] -         CNTDB - PFS Anbindung Produktion
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-50'>SUPERFD-50</a>] -         CNTDB - PFS Anbindung Reference Anlage
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-56'>SUPERFD-56</a>] -         OPSSUITE Handling zwischen Test, SDM und PFS klären
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-67'>SUPERFD-67</a>] -         Planung der weiteren Schritte zur CASINO Einführung
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-191'>SUPERFD-191</a>] -         TOOLS Integration in RADADMIN Stufe 2
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-192'>SUPERFD-192</a>] -         CNTDB - PFS Anbindung Test Anlage
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-255'>SUPERFD-255</a>] -         Maßnahmen aus SDSK 61.1
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-258'>SUPERFD-258</a>] -         Einführung von WCONF2 zum automatischen Deployment von Anwendungen
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-332'>SUPERFD-332</a>] -         PFS Backup/ Restore System basierend auf DSIO-EMC-Networker Full Managed Service
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-501'>SUPERFD-501</a>] -         PFS3.0 Stufe 2 - Gesamtsicht und Squad-Übergreifende Themen
+</li>
+</ul>
+        
+<h2>        User Story
+</h2>
+<ul>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-36'>SUPERFD-36</a>] -         Anbindung Produktion CNTDB-PFS
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-52'>SUPERFD-52</a>] -         Anbindung Referenceanlage CNTDB - PFS
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-53'>SUPERFD-53</a>] -         Löschen der Teilnehmer mit Umlauten
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-54'>SUPERFD-54</a>] -         Ablösung der betrieblichen Skripte (zHost) Stufe 2
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-57'>SUPERFD-57</a>] -         OPSSUITE Rollenmodell klären
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-58'>SUPERFD-58</a>] -         BUS Server in Stufe 2
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-60'>SUPERFD-60</a>] -         Einführung DBVisualizer 
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-62'>SUPERFD-62</a>] -         Untersuchung WCONF2 nach möglichen Uses-Cases
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-68'>SUPERFD-68</a>] -         Backuplösung für CASINO
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-74'>SUPERFD-74</a>] -         Mappingdokument Parameter CNTDB - PFS
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-88'>SUPERFD-88</a>] -         Zugang DEVOTEAM Testanlage
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-91'>SUPERFD-91</a>] -         Klärung Common Tests RC19.2
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-93'>SUPERFD-93</a>] -         Prüfung ob eine IT Checkliste für Applikation Stufe 2 nötig ist
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-94'>SUPERFD-94</a>] -         Schulungsmaßnahmen in Stufe 2
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-95'>SUPERFD-95</a>] -         Lizenzbedarf für Stufe 2 erfassen
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-96'>SUPERFD-96</a>] -         Zertifikatsbedarf in Stufe 2
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-97'>SUPERFD-97</a>] -         Basis Datenmodell für PFS in Live CNTDB in einbringen - Initiale Konfiguration
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-98'>SUPERFD-98</a>] -         Phasendefinition für Rollout Stufe 2
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-100'>SUPERFD-100</a>] -         Genehmigungsprozess CONAN-Webgui Notrufrollen
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-101'>SUPERFD-101</a>] -         RDQ Schnittstellenvereinbarung RDQ 61.2
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-102'>SUPERFD-102</a>] -         Globale Übersicht Stufe 1 ,2 und 3 erstellen
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-125'>SUPERFD-125</a>] -         Vertico Erweiterung IP Range für CASINO
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-136'>SUPERFD-136</a>] -         SPOC für Fehler in der PFS auch für CASINO
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-142'>SUPERFD-142</a>] -         CASINO Erweiterungen von IBM abstimmen (VM + Vertico Rest Schnittstelle)
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-151'>SUPERFD-151</a>] -         Provisioning Zertifikate für Produktion signieren
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-153'>SUPERFD-153</a>] -         Monitoring Rollout Stufe 2 Phase 1
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-156'>SUPERFD-156</a>] -         FS Integration RARADMIN/HISPOOL/WEBASTRA in RADADMIN
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-171'>SUPERFD-171</a>] -         Abfrage der SW der Netzwerkkomponenten
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-172'>SUPERFD-172</a>] -         Abfage von Kundenprofilen zur Aufbereitung der Analyse
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-173'>SUPERFD-173</a>] -         Manuelle Abfrage aller wichtigen Zustände und Funktionen
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-174'>SUPERFD-174</a>] -         Netzwerktrace einfach und schnell bearbeiten mittels Filterkriterien
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-188'>SUPERFD-188</a>] -         IOBP Integration in Anritsu Ansprechpartner bei IBM
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-197'>SUPERFD-197</a>] -         Löschen nicht mehr benötigter Domainindexe
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-200'>SUPERFD-200</a>] -         Klärung offener Punkte zur Anbindung LDAP-HUB LDAP-loadbalancer
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-204'>SUPERFD-204</a>] -         Anbindung RADADMIN an CNTDB PGW
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-205'>SUPERFD-205</a>] -         Anbindung RDQ/MDP an CNTDB PGW TEST
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-236'>SUPERFD-236</a>] -         Testanlage HISPOOL Anbindung an IT Testsystem
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-237'>SUPERFD-237</a>] -         Produktion HISPOOL Anbindung an IT 
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-238'>SUPERFD-238</a>] -         Produktion: HISPOOL Anbindung an DNS ziel
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-239'>SUPERFD-239</a>] -         Abschalten OnlineNEW auf zHost
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-248'>SUPERFD-248</a>] -         Abstimmung RDQ Anbindung CASINO
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-253'>SUPERFD-253</a>] -         Löschen von Schmalbandroutern
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-268'>SUPERFD-268</a>] -         WCONF2: Erweiterbare Skriptverteilung
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-274'>SUPERFD-274</a>] -         BUS Stufe 2: Einführung von SOCT
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-275'>SUPERFD-275</a>] -         BUS Stufe 2: Einführung von TASTE-OS
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-276'>SUPERFD-276</a>] -         WCONF2: EMC Networker Client
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-277'>SUPERFD-277</a>] -         WCONF2: Update Zertifikat
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-278'>SUPERFD-278</a>] -         WCONF2: Update erweiterbare Skriptverteilung
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-279'>SUPERFD-279</a>] -         WCONF2: Multiple Instanzen auf einer VM
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-280'>SUPERFD-280</a>] -         WCONF2: Update Middlewareclients
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-281'>SUPERFD-281</a>] -         WCONF2: ZBK RADANALYSIS
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-282'>SUPERFD-282</a>] -         WCONF2: Umzug der Datenbanken
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-283'>SUPERFD-283</a>] -         WCONF2: ZBK CASINO
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-284'>SUPERFD-284</a>] -         WCONF2: ZKB Update CASINO
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-290'>SUPERFD-290</a>] -         SDM: PFS CR 1000 Networkservices
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-303'>SUPERFD-303</a>] -         Anpassen CASINO auf SLES12 SP4
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-305'>SUPERFD-305</a>] -         CASINO Kommunikationsmatrix in der Testanlage
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-335'>SUPERFD-335</a>] -         PFS3.0 Backup / Restore Tests der Lösung (PFS3.0 TA &amp;lt;-&amp;gt; DSIO) 
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-338'>SUPERFD-338</a>] -         OPSSuite: Datenexport PFS einbinden
+</li>
+<li>[<a href='https://gard.telekom.de/gard/browse/SUPERFD-502'>SUPERFD-502</a>] -         Koordination des Reviewprozesses zu allen PFS3.0 Stufe 2 relevanten Dokumenten Planung
+</li>
+</ul>
+                                                                                                                                                                                                                                                                                                                                                                                                </textarea>
+
+</body>
+                </section><!-- .aui-page-panel-content -->
+        </div><!-- .aui-page-panel-inner --></div><!-- .aui-page-panel -->
+
+    </section>
+    <footer id="footer" role="contentinfo">
+        
+        
+
+<section class="footer-body">
+
+<div class="footer-body footer-gard">
+	<ul>
+	    <li>
+	        GARD <span id="gard-footer-version"></span> based on Atlassian JIRA 
+	        	        	            	        	
+	        <span id="footer-build-information">(v7.6.9#76011-<span title='39a1e02c3173ed841f451ce37a30078bcab3b276' data-commit-id='39a1e02c3173ed841f451ce37a30078bcab3b276}'>sha1:39a1e02</span>)</span>
+	    </li>
+	</ul>
+</div>
+    <ul class="atlassian-footer">
+    <li>
+        Atlassian JIRA <a class="seo-link" rel="nofollow" href="https://www.atlassian.com/software/jira">Project Management Software</a>
+                                            <span id="footer-build-information">(v7.6.9#76011-<span title='39a1e02c3173ed841f451ce37a30078bcab3b276' data-commit-id='39a1e02c3173ed841f451ce37a30078bcab3b276}'>sha1:39a1e02</span>)</span>
+    </li>
+    <li>
+        <a id="about-link" rel="nofollow" href="/gard/secure/AboutPage.jspa/secure/AboutPage.jspa">About JIRA</a>
+    </li>
+    <li>
+        <a id="footer-report-problem-link" rel="nofollow" href="/gard/secure/ContactAdministrators!default.jspa">Report a problem</a>
+    </li>
+</ul>
+    <ul class="atlassian-footer">
+        <li class="licensemessage">
+            
+        </li>
+    </ul>
+
+    <div id="footer-logo"><a rel="nofollow" href="http://www.atlassian.com/">Atlassian</a></div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<fieldset class="hidden parameters">
+    <input type="hidden" title="loggedInUser" value="patrick.kleiner@external.telekom.de">
+    <input type="hidden" title="ajaxTimeout" value="The call to the JIRA server did not complete within the timeout period.  We are unsure of the result of this operation.">
+    <input type="hidden" title="JiraVersion" value="7.6.9" />
+    <input type="hidden" title="ajaxUnauthorised" value="You are not authorised to perform this operation. Please log in.">
+    <input type="hidden" title="baseURL" value="https://gard.telekom.de/gard" />
+    <input type="hidden" title="ajaxCommsError" value="The JIRA server could not be contacted. This may be a temporary glitch or the server may be down. ">
+    <input type="hidden" title="ajaxServerError" value="The JIRA server was contacted but has returned an error response. We are unsure of the result of this operation.">
+    <input type="hidden" title="ajaxErrorCloseDialog" value="Close this dialog and press refresh in your browser">
+    <input type="hidden" title="ajaxErrorDialogHeading" value="Communications Breakdown">
+
+    <input type="hidden" title="dirtyMessage" value="You have entered new data on this page. If you navigate away from this page without first saving your data, the changes will be lost.">
+    <input type="hidden" title="dirtyDialogMessage" value="You have entered new data in this dialog. If you navigate away from this dialog without first saving your data, the changes will be lost. Click cancel to return to the dialog.">
+    <input type="hidden" title="keyType" value="Type">
+    <input type="hidden" title="keyThen" value="then">
+    <input type="hidden" title="dblClickToExpand" value="Double click to expand">
+    <input type="hidden" title="actions" value="Actions">
+    <input type="hidden" title="removeItem" value="Remove">
+    <input type="hidden" title="workflow" value="Workflow">
+    <input type="hidden" title="labelNew" value="New Label">
+    <input type="hidden" title="issueActionsHint" value="Begin typing for available operations or press down to see all">
+    <input type="hidden" title="closelink" value="Close">
+    <input type="hidden" title="dotOperations" value="Operations">
+    <input type="hidden" title="dotLoading" value="Loading...">
+    <input type="hidden" title="frotherSuggestions" value="Suggestions">
+    <input type="hidden" title="frotherNomatches" value="No Matches">
+    <input type="hidden" title="multiselectVersionsError" value="{0} is not a valid version.">
+    <input type="hidden" title="multiselectComponentsError" value="{0} is not a valid component.">
+    <input type="hidden" title="multiselectGenericError" value="The value {0} is invalid.">
+</fieldset>
+
+    </footer>
+</div>
+
+
+<script type="text/javascript" src="/gard/s/d41d8cd98f00b204e9800998ecf8427e-CDN/vri30e/76011/cd7637c364feaec72bc271675c96d417/1.0/_/download/batch/jira.webresources:bigpipe-js/jira.webresources:bigpipe-js.js" data-wrm-key="jira.webresources:bigpipe-js" data-wrm-batch-type="resource" data-initially-rendered></script>
+<script type="text/javascript" src="/gard/s/d41d8cd98f00b204e9800998ecf8427e-CDN/vri30e/76011/cd7637c364feaec72bc271675c96d417/1.0/_/download/batch/jira.webresources:bigpipe-init/jira.webresources:bigpipe-init.js" data-wrm-key="jira.webresources:bigpipe-init" data-wrm-batch-type="resource" data-initially-rendered></script>
+
+<form id="jira_request_timing_info" class="dont-default-focus" >
+	<fieldset class="parameters hidden">
+		<input type="hidden" title="jira.request.start.millis" value="1556527510921" />
+		<input type="hidden" title="jira.request.server.time" value="231" />
+		<input type="hidden" title="jira.request.id" value="645x938895x4" />
+		<input type="hidden" title="jira.session.expiry.time" value="1556530796345" />
+		<input type="hidden" title="jira.session.expiry.in.mins" value="54" />
+		<input id="jiraConcurrentRequests" type="hidden" name="jira.request.concurrent.requests" value="4" />
+		<input type="hidden" title="issue.index.reads.time.in.ms" value="82" />
+		<input type="hidden" title="db.reads.time.in.ms" value="0" />
+		<input type="hidden" title="db.conns.time.in.ms" value="8" />
+	</fieldset>
+</form>
+<!--
+	                 REQUEST ID : 645x938895x4
+	          REQUEST TIMESTAMP : [29/Apr/2019:10:45:10 +0200]
+	               REQUEST TIME : 0.2310
+	                 ASESSIONID : 1jh1dms
+	        CONCURRENT REQUESTS : 4
+
+	             issue.index.reads : OpSnapshot{name='issue.index.reads', invocationCount=130, elapsedTotal=82655106, elapsedMin=350450, elapsedMax=2258645, resultSetSize=0, cpuTotal=0, cpuMin=0, cpuMax=0}
+	                      db.reads : OpSnapshot{name='db.reads', invocationCount=1, elapsedTotal=585472, elapsedMin=585472, elapsedMax=585472, resultSetSize=0, cpuTotal=0, cpuMin=0, cpuMax=0}
+	                      db.conns : OpSnapshot{name='db.conns', invocationCount=13, elapsedTotal=8178997, elapsedMin=365417, elapsedMax=1107776, resultSetSize=0, cpuTotal=0, cpuMin=0, cpuMax=0}
+-->
+
+</body>
+</html>
